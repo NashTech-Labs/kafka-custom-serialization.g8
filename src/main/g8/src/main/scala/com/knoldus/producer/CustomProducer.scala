@@ -20,6 +20,10 @@ class CustomProducer {
 
   val producer = new KafkaProducer[String, Student](props)
 
+  /**
+    * This method will write data to given topic.
+    * @param topic String
+    */
   def writeToKafka(topic: String) {
     for (i <- 1 to 100)
       producer.send(new ProducerRecord[String, Student](topic, i.toString, Student(i, s"name-$i")))

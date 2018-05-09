@@ -25,6 +25,10 @@ class CustomConsumer {
 
   val consumer = new KafkaConsumer[String, Student](props)
 
+  /**
+    * This method will read data from given topic.
+    * @param topic String
+    */
   def readFromKafka(topic: String) {
     consumer.subscribe(Collections.singletonList(topic))
     while (true) {
