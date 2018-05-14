@@ -13,7 +13,7 @@ If you do not have kafka in your system. Download it from [here](https://www.apa
 
 ```bin/zookeeper-server-start.sh config/zookeeper.properties```
 
-**3) Start the Kafka Server **
+**3) Start the Kafka Server**
 
 ```bin/kafka-server-start.sh config/server.properties```
 
@@ -28,8 +28,10 @@ If you do not have kafka in your system. Download it from [here](https://www.apa
 ```sbt clean compile ```
 
 **3) Run the application**
-     a) start producer // producer will start writing data to kafka topic
-     b) start consumer // consumer will start consuming data from kafka and print it to console
+    
+    a) start producer // producer will start writing data to kafka topic
+    
+    b) start consumer // consumer will start consuming data from kafka and print it to console
 
 
 Template license
