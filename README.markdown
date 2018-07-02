@@ -21,7 +21,7 @@ If you do not have kafka in your system. Download it from [here](https://www.apa
 
 **1) Clone the application**
 
-```sbt new jainnancy/kafka-custom-serialization.g8```
+```sbt new knoldus/kafka-custom-serialization.g8```
 
 **2) Compile the application**
 
